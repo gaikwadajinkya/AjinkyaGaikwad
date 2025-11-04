@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>[[Your Name]] — Homepage</title>
+  <meta name="description" content="Postdoctoral researcher in algorithms, graph theory, and algorithmic game theory.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <div class="brand">
+        <h1><a href="#top">[[Your Name]]</a></h1>
+        <p class="tagline">Postdoctoral Researcher · Algorithms · Graph Theory · Algorithmic Game Theory</p>
+      </div>
+      <nav class="nav">
+        <a href="#bio">Bio</a>
+        <a href="#publications">Publications</a>
+        <a href="#news">News</a>
+        <a href="#cv">CV</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top" class="container">
+    <section id="bio" class="card">
+      <h2>Bio</h2>
+      <div class="grid-2">
+        <div>
+          <p><strong>[[Your Name]]</strong> is a postdoctoral researcher in <em>algorithm design</em>, <em>graph theory</em>, and <em>algorithmic game theory</em>. 
+          Their work explores parameterized complexity, kernelization, network formation, and equilibrium computation.</p>
+          <p>Currently at <strong>[[Your Institution, Department]]</strong>, advised by <strong>[[Advisor(s)]]</strong>. 
+          Previously [[PhD, University, Year]]; [[MSc/BTech, University, Year]].</p>
+          <p>Keywords: algorithms, graph theory, parameterized complexity, kernelization, game theory, network design.</p>
+          <p class="links">
+            <a id="scholarLink" target="_blank" rel="noopener">Google Scholar</a> · 
+            <a id="dblpLink" target="_blank" rel="noopener">DBLP</a> · 
+            <a id="orcidLink" target="_blank" rel="noopener">ORCID</a> · 
+            <a id="githubLink" target="_blank" rel="noopener">GitHub</a>
+          </p>
+        </div>
+        <div class="headshot-col">
+          <img class="headshot" src="assets/headshot-placeholder.svg" alt="Headshot placeholder">
+          <div class="small-note">Replace with your photo: <code>assets/headshot.jpg</code> (square, ~800×800)</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="publications" class="card">
+      <h2>Selected Publications</h2>
+      <div id="pubs"></div>
+      <div class="small-note">Edit <code>publications.json</code> to add/update items. Supports PDF/DOI/arXiv links.</div>
+    </section>
+
+    <section id="news" class="card">
+      <h2>News</h2>
+      <ul id="newsList"></ul>
+      <div class="small-note">Edit <code>news.json</code> to update items. Newest first.</div>
+    </section>
+
+    <section id="cv" class="card">
+      <h2>CV</h2>
+      <p>Download a full CV here: <a href="assets/CV.pdf" download>CV (PDF)</a></p>
+      <div class="small-note">Replace <code>assets/CV.pdf</code> with your actual CV file.</div>
+    </section>
+
+    <section id="contact" class="card">
+      <h2>Contact</h2>
+      <p><strong>Email:</strong> <a id="emailLink"></a><br>
+         <strong>Office:</strong> [[Office/Building, Address]]</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> [[Your Name]]. Built with a lightweight static template. Host on <a href="https://pages.github.com/" target="_blank" rel="noopener">GitHub Pages</a>.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,117 @@
+/* Minimal, clean, responsive academic homepage */
+:root {
+  --bg: #ffffff;
+  --text: #111111;
+  --muted: #555555;
+  --card: #f6f8fa;
+  --link: #0b57d0;
+  --border: #e6e8eb;
+}
+
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; }
+body {
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+  line-height: 1.55;
+  color: var(--text);
+  background: var(--bg);
+}
+
+.container {
+  width: min(960px, 92vw);
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background: var(--bg);
+  border-bottom: 1px solid var(--border);
+}
+
+.site-header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.75rem 1rem;
+}
+
+.brand h1 { margin: 0; font-size: 1.25rem; }
+.brand h1 a { color: var(--text); text-decoration: none; }
+.tagline { margin: 0.1rem 0 0; color: var(--muted); font-size: 0.95rem; }
+
+.nav a {
+  margin-left: 1rem;
+  text-decoration: none;
+  color: var(--text);
+  font-weight: 600;
+}
+.nav a:hover { color: var(--link); }
+
+.card {
+  background: var(--card);
+  padding: 1.25rem 1.25rem;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  margin: 1rem 0;
+}
+
+h2 { margin-top: 0; }
+
+.grid-2 {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 1fr;
+}
+@media (min-width: 720px) {
+  .grid-2 { grid-template-columns: 2fr 1fr; }
+}
+
+.headshot {
+  width: 100%;
+  border-radius: 12px;
+  border: 1px solid var(--border);
+  background: #fff;
+}
+
+.headshot-col { align-self: start; }
+
+.small-note {
+  color: var(--muted);
+  font-size: 0.9rem;
+  margin-top: 0.5rem;
+}
+
+.pub-item {
+  padding: 0.9rem;
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  margin: 0.6rem 0;
+}
+.pub-title { font-weight: 700; }
+.pub-venue { color: var(--muted); }
+.pub-links a { margin-right: 0.8rem; }
+
+#newsList { list-style: none; padding-left: 0; }
+#newsList li {
+  padding: 0.6rem 0.8rem;
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  margin: 0.5rem 0;
+  display: grid;
+  grid-template-columns: 9ch 1fr;
+  gap: 1rem;
+}
+.news-date { color: var(--muted); font-variant-numeric: tabular-nums; }
+
+.site-footer {
+  border-top: 1px solid var(--border);
+  padding: 1.5rem 0;
+  margin-top: 1rem;
+  color: var(--muted);
+  font-size: 0.95rem;
+}

@@ -1,0 +1,33 @@
+[
+  {
+    "title": "Uniform Cluster Vertex Deletion: Kernels and Faster FPT Algorithms",
+    "authors": [
+      "[[Your Name]]",
+      "[[Coauthor 1]]",
+      "[[Coauthor 2]]"
+    ],
+    "venue": "Example Conference/Journal",
+    "year": 2025,
+    "pdf": "assets/sample-paper.pdf",
+    "arxiv": "2501.12345",
+    "doi": "",
+    "code": "",
+    "slides": "",
+    "note": ""
+  },
+  {
+    "title": "s-Club Cluster Edge Deletion: Parameterized and Kernelization Complexity",
+    "authors": [
+      "[[Your Name]]",
+      "[[Coauthor]]"
+    ],
+    "venue": "Example Workshop",
+    "year": 2024,
+    "pdf": "",
+    "arxiv": "",
+    "doi": "",
+    "code": "",
+    "slides": "",
+    "note": ""
+  }
+]
